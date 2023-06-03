@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90996660-16E6-44B0-A9C4-6B5E23A2FD4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ejemplos12clParcial</RootNamespace>
+    <AssemblyName>Ejemplos12clParcial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEspecialidad.Designer.cs">
+      <DependentUpon>frmEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPantallaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPantallaInicio.Designer.cs">
+      <DependentUpon>frmPantallaInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcceso.Designer.cs">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaciente.Designer.cs">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hospital_medykalsystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hospital_medykalsystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAcceso.resx">
+      <DependentUpon>frmAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEspecialidad.resx">
+      <DependentUpon>frmEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaciente.resx">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPantallaInicio.resx">
+      <DependentUpon>frmPantallaInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Hospital_medykalsystemDataSet.xsc">
+      <DependentUpon>Hospital_medykalsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hospital_medykalsystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hospital_medykalsystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hospital_medykalsystemDataSet.xss">
+      <DependentUpon>Hospital_medykalsystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files IE.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-dll.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-Exel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-Help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floppy.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera_png.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penguin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adim.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONOS\SISTEMA 2\apply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONOS\SISTEMA 2\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81 at blue canvas right.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81 at blue canvas left.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81 at red canvas up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81 at red canvas down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ascii_32x32-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3floppy_unmount_32x32-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_broken_32x32-32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONOS\SISTEMA 3\star.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image hospital1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hospital_medykalsystem.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
